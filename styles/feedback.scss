@@ -1,0 +1,28 @@
+.feedback__notice {
+    color: $primary-color;
+    font-size: 1rem;
+    margin: 0 0 2em;
+}
+
+.feedback__form {
+    display: grid;
+    width: 50%;
+    gap: 30px;
+
+    > * {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .feedback {
+        height: 100%;
+    }
+
+    .feedback__form {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        align-items: center;
+        width: 100%;
+    }
+}

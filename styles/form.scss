@@ -1,0 +1,22 @@
+.form__control {
+    width: 18rem;
+    height: 56px;
+    padding: 10px 20px;
+    border: 1px solid rgba($color: #626262, $alpha: .2);
+    font-family: $font-base;
+    font-size: .875rem;
+    line-height: 1.92;
+    background-color: $form-control-bg;
+    color: $form-control-color;
+
+    &::placeholder {
+        color: $form-control-placeholder;
+    }
+}
+
+.form__massege {
+    width: 38rem;
+    height: 147px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}

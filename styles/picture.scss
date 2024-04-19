@@ -1,0 +1,30 @@
+.img {
+    position: absolute;
+    margin: 10px;
+}
+
+.feedback__img-1 {
+    width: 240px;
+    height: 500px;
+    top: 135px;
+    left: 673px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.feedback__img-2 {
+    width: 240px;
+    height: 500px;
+    top: 74px;
+    left: 979px;
+    gap: 0px;
+    opacity: 0px;
+    margin-right: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .img {
+        display: none;
+    }
+}

@@ -1,0 +1,70 @@
+@include font-face($font-base, 'fonts/OpenSans-Bold', 700);
+@include font-face($font-base, 'fonts/OpenSans-Refular');
+@include font-face($font-headline, 'fonts/PlayfairDisplay-Bold');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: $font-base;
+    background-color: $body-bg;
+    color: $body-color;
+}
+
+.content {
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    max-width: 1280px;
+    padding: 80px 74px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+        padding: 10px;
+        height: 100%;
+
+        
+    }
+}
+
+.container::before {
+    content: '';
+    background-image: url("img/Contact Image 1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: .2;
+
+    @media screen and (min-width: 768px) {
+        background-image: none;
+    }
+}
+
+
+.h1 {
+    font-family: $font-headline;
+    color: $body-color;
+    font-size: 3rem;
+    margin: 0 0 .5em;
+
+    @media screen and (max-width: 768px) {
+        font-size: 2.3rem;
+    }
+}
+
+
+
